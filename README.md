@@ -8,3 +8,5 @@ Android Native Application to List Twitter Videos
 - Video are listed from the most recent
 - Twitter SDK, Picasso, Exoplayer, RecyclerView
 - Please, add your own credentials for Twitter API in strings.xml
+
+![git demo](https://github.com/pebertli/TwitterVideoList/blob/master/listvideo2.gif)
