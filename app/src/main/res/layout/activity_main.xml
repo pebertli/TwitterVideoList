@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/searchLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="search term"
+            android:text="#dogsoftwitter"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:id="@+id/searchTerm"
+
+            >
+        </EditText>
+        <ImageButton android:src="@android:drawable/ic_menu_search"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_weight="6"
+            android:id="@+id/searchButton"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recyclerViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        app:layout_constraintTop_toBottomOf="@id/searchLayout"
+        app:layout_constraintStart_toStartOf="@id/searchLayout"
+        android:orientation="vertical"
+        >
+        <Switch
+            android:id="@+id/switchQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Best Video Quality"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

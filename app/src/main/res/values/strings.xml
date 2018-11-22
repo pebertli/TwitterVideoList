@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">videolist</string>
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">-CONSUMER_KEY-</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">-CONSUMER_SECRET-</string>
+</resources>
